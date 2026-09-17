@@ -1,0 +1,1981 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Drogaria e Perfumaria Estrela | São Paulo - SP</title>
+
+<meta
+name="description"
+content="Drogaria e Perfumaria Estrela em São Paulo. Produtos de saúde, higiene, beleza e perfumaria. Consulte nossos produtos e entrega pelo WhatsApp."
+>
+
+<meta name="robots" content="index, follow">
+
+<style>
+
+:root{
+    --azul:#0046a8;
+    --azul-escuro:#002f73;
+    --azul-medio:#0756a5;
+    --azul-claro:#eaf3ff;
+    --vermelho:#e30613;
+    --vermelho-escuro:#b8000b;
+    --amarelo:#f5b400;
+    --branco:#ffffff;
+    --cinza:#f5f7fa;
+    --texto:#20242a;
+    --cinza-texto:#68717d;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:var(--cinza);
+    color:var(--texto);
+    line-height:1.6;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#fff;
+    box-shadow:0 3px 15px rgba(0,0,0,.12);
+    border-top:4px solid var(--vermelho);
+}
+
+.nav{
+    max-width:1150px;
+    min-height:78px;
+    margin:auto;
+    padding:9px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:var(--azul-escuro);
+    font-size:19px;
+    font-weight:900;
+    line-height:1.1;
+}
+
+.logo img{
+    width:58px;
+    height:58px;
+    object-fit:contain;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:22px;
+}
+
+.nav-links a{
+    color:var(--azul-escuro);
+    text-decoration:none;
+    font-weight:700;
+    transition:.2s;
+}
+
+.nav-links a:hover{
+    color:var(--vermelho);
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 21px;
+    border-radius:9px;
+    text-decoration:none;
+    font-weight:800;
+    border:0;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-red{
+    background:var(--vermelho);
+    color:#fff;
+}
+
+.btn-red:hover{
+    background:var(--vermelho-escuro);
+    box-shadow:0 7px 18px rgba(229,37,42,.25);
+}
+
+.btn-blue{
+    background:var(--azul);
+    color:#fff;
+}
+
+.btn-white{
+    background:#fff;
+    color:var(--azul);
+}
+
+.btn-yellow{
+    background:var(--amarelo);
+    color:#172b4d;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero{
+    min-height:560px;
+    display:flex;
+    align-items:center;
+    background:
+        linear-gradient(
+            rgba(0,47,115,.76),
+            rgba(0,47,115,.76)
+        ),
+        url("banner.png") center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:1150px;
+    width:100%;
+    margin:auto;
+    padding:80px 20px;
+    color:#fff;
+}
+
+.hero-badge{
+    display:inline-block;
+    background:var(--vermelho);
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:900;
+    margin-bottom:18px;
+    box-shadow:0 4px 12px rgba(0,0,0,.18);
+}
+
+.hero h1{
+    max-width:760px;
+    font-size:50px;
+    line-height:1.08;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:680px;
+    font-size:20px;
+    margin-bottom:28px;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+
+/* =========================================
+   SEÇÕES
+========================================= */
+
+section{
+    padding:70px 20px;
+}
+
+.container{
+    max-width:1150px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    color:var(--azul-escuro);
+    font-size:34px;
+    margin-bottom:8px;
+}
+
+.section-title h2::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:5px;
+    background:linear-gradient(
+        90deg,
+        var(--azul) 0%,
+        var(--vermelho) 50%,
+        var(--amarelo) 100%
+    );
+    margin:12px auto 0;
+    border-radius:5px;
+}
+
+.section-title p{
+    color:var(--cinza-texto);
+}
+
+
+/* =========================================
+   CATEGORIAS
+========================================= */
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.category{
+    background:#fff;
+    padding:28px 20px;
+    border-radius:14px;
+    text-align:center;
+    border-bottom:4px solid var(--azul);
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+    transition:.2s;
+}
+
+.category:hover{
+    transform:translateY(-5px);
+    border-bottom-color:var(--vermelho);
+}
+
+.category-icon{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.category h3{
+    color:var(--azul-escuro);
+    margin-bottom:6px;
+}
+
+.category p{
+    color:var(--cinza-texto);
+}
+
+
+/* =========================================
+   BANNER ROTATIVO
+========================================= */
+
+.slider{
+    position:relative;
+    overflow:hidden;
+    border-radius:18px;
+    box-shadow:0 8px 28px rgba(0,0,0,.14);
+    background:#111;
+}
+
+.slides{
+    display:flex;
+    transition:transform .5s ease;
+}
+
+.slide{
+    min-width:100%;
+    height:430px;
+    position:relative;
+}
+
+.slide img,
+.slide video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.slide video{
+    background:#111;
+}
+
+.slide-caption{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:50px 25px 25px;
+    color:#fff;
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.85)
+    );
+}
+
+.slide-caption h3{
+    font-size:29px;
+}
+
+.slider-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:45px;
+    height:45px;
+    border:0;
+    border-radius:50%;
+    background:rgba(255,255,255,.94);
+    color:var(--azul);
+    font-size:28px;
+    cursor:pointer;
+    z-index:5;
+}
+
+.slider-btn:hover{
+    background:var(--amarelo);
+}
+
+.prev{
+    left:15px;
+}
+
+.next{
+    right:15px;
+}
+
+.dots{
+    position:absolute;
+    bottom:14px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:7px;
+}
+
+.dot{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#fff;
+    opacity:.5;
+    cursor:pointer;
+}
+
+.dot.active{
+    opacity:1;
+}
+
+
+/* =========================================
+   PRODUTOS
+========================================= */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.product{
+    background:#fff;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,.07);
+}
+
+.product img{
+    width:100%;
+    height:210px;
+    object-fit:cover;
+}
+
+.product-content{
+    padding:20px;
+}
+
+.product h3{
+    color:var(--azul-escuro);
+    margin-bottom:7px;
+}
+
+.product p{
+    color:var(--cinza-texto);
+}
+
+
+/* =========================================
+   ENTREGA
+========================================= */
+
+.delivery{
+    background:
+        linear-gradient(
+            135deg,
+            var(--azul-escuro),
+            var(--azul)
+        );
+    color:#fff;
+}
+
+.delivery-box{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.delivery h2{
+    font-size:40px;
+    line-height:1.15;
+    margin-bottom:15px;
+}
+
+.delivery p{
+    font-size:18px;
+    margin-bottom:22px;
+}
+
+.delivery-info{
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.2);
+    padding:28px;
+    border-radius:18px;
+}
+
+.delivery-info div{
+    margin-bottom:13px;
+}
+
+.delivery-info div:last-child{
+    margin-bottom:0;
+}
+
+
+/* =========================================
+   SOBRE
+========================================= */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about-img{
+    height:360px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+
+.about-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.about h2{
+    color:var(--azul-escuro);
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+
+/* =========================================
+   FAQ
+========================================= */
+
+.faq{
+    max-width:850px;
+    margin:auto;
+}
+
+details{
+    background:#fff;
+    margin-bottom:12px;
+    padding:19px 20px;
+    border-radius:10px;
+    border-left:4px solid var(--azul);
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
+    transition:.2s;
+}
+
+details:hover{
+    border-left-color:var(--vermelho);
+}
+
+details[open]{
+    border-left-color:var(--vermelho);
+}
+
+summary{
+    cursor:pointer;
+    font-weight:800;
+    color:var(--azul-escuro);
+    font-size:16px;
+}
+
+details p{
+    margin-top:12px;
+    color:var(--cinza-texto);
+}
+
+
+/* =========================================
+   LOCALIZAÇÃO
+========================================= */
+
+.location{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.location-box{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
+}
+
+.location-box h3{
+    color:var(--azul-escuro);
+    margin-bottom:10px;
+}
+
+.address-card{
+    background:#f8faff;
+    border-left:5px solid var(--amarelo);
+    padding:15px 17px;
+    margin-bottom:15px;
+    border-radius:10px;
+}
+
+.address-card strong{
+    display:block;
+    color:var(--azul-escuro);
+    margin-bottom:5px;
+    font-size:16px;
+}
+
+.address-card p{
+    color:var(--cinza-texto);
+    margin:0;
+    line-height:1.6;
+}
+
+.location-delivery{
+    margin-top:20px;
+    padding-top:20px;
+    border-top:1px solid #e3e8ef;
+}
+
+.location-delivery h3{
+    margin-bottom:7px;
+}
+
+.map{
+    width:100%;
+    min-height:330px;
+    border:0;
+    border-radius:18px;
+}
+
+
+/* =========================================
+   CTA FINAL
+========================================= */
+
+.final-cta{
+    background:var(--azul-claro);
+    text-align:center;
+    border-top:1px solid #d6e7fa;
+}
+
+.final-cta h2{
+    color:var(--azul-escuro);
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+.final-cta .btn{
+    min-width:230px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer{
+    background:#062d5b;
+    color:#fff;
+    padding:45px 20px 25px;
+}
+
+.footer-grid{
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:35px;
+}
+
+footer h3{
+    margin-bottom:12px;
+}
+
+footer p{
+    color:#e4ebf3;
+}
+
+footer a{
+    color:#fff;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:var(--amarelo);
+}
+
+.cnpj{
+    margin-top:12px;
+    color:#fff;
+    font-size:14px;
+    font-weight:700;
+}
+
+.footer-bottom{
+    max-width:1150px;
+    margin:30px auto 0;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.18);
+    color:#cbd7e4;
+    font-size:13px;
+}
+
+.footer-links{
+    display:flex;
+    flex-direction:column;
+    gap:7px;
+}
+
+.instagram-link{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    margin-top:8px;
+}
+
+
+/* =========================================
+   WHATSAPP FLUTUANTE
+========================================= */
+
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:61px;
+    height:61px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    box-shadow:0 6px 22px rgba(0,0,0,.25);
+    z-index:2000;
+    transition:.2s;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.08);
+}
+
+.whatsapp-float svg{
+    width:34px;
+    height:34px;
+    fill:#fff;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:850px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        min-height:590px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .categories{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .delivery-box,
+    .about,
+    .location{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .slide{
+        height:310px;
+    }
+}
+
+
+/* =========================================
+   CELULAR PEQUENO
+========================================= */
+
+@media(max-width:500px){
+
+    .nav{
+        min-height:68px;
+        padding:8px 13px;
+    }
+
+    .logo{
+        font-size:15px;
+    }
+
+    .logo img{
+        width:46px;
+        height:46px;
+    }
+
+    .nav > .btn{
+        padding:10px 12px;
+        font-size:13px;
+    }
+
+    .hero-content{
+        padding:55px 18px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    section{
+        padding:55px 16px;
+    }
+
+    .section-title h2{
+        font-size:28px;
+    }
+
+    .categories{
+        gap:10px;
+    }
+
+    .category{
+        padding:20px 10px;
+    }
+
+    .category-icon{
+        font-size:34px;
+    }
+
+    .delivery h2{
+        font-size:30px;
+    }
+
+    .slide-caption h3{
+        font-size:21px;
+    }
+
+    .slide-caption p{
+        font-size:14px;
+    }
+
+    .slider-btn{
+        width:38px;
+        height:38px;
+        font-size:23px;
+    }
+
+    .final-cta .btn{
+        display:block;
+        width:100%;
+        max-width:280px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .whatsapp-float{
+        width:57px;
+        height:57px;
+        right:15px;
+        bottom:15px;
+    }
+
+    .whatsapp-float svg{
+        width:31px;
+        height:31px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<script>
+
+const WHATSAPP = "5511999999999";
+
+function whatsappLink(mensagem){
+
+    return "https://wa.me/" +
+    WHATSAPP +
+    "?text=" +
+    encodeURIComponent(mensagem);
+
+}
+
+</script>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header>
+
+<div class="nav">
+
+<a href="#inicio" class="logo">
+
+<img
+src="logo.png"
+alt="Drogaria e Perfumaria Estrela"
+>
+
+<span>
+
+Drogaria e<br>
+Perfumaria Estrela
+
+</span>
+
+</a>
+
+
+<nav class="nav-links">
+
+<a href="#inicio">Início</a>
+<a href="#categorias">Produtos</a>
+<a href="#entrega">Entrega</a>
+<a href="#sobre">Sobre</a>
+<a href="#faq">Dúvidas</a>
+<a href="#localizacao">Localização</a>
+
+</nav>
+
+
+<a
+href="#"
+class="btn btn-red"
+onclick="this.href=whatsappLink(
+'Olá! Gostaria de fazer um pedido na Drogaria e Perfumaria Estrela.'
+)"
+>
+
+WhatsApp
+
+</a>
+
+</div>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section
+class="hero"
+id="inicio"
+>
+
+<div class="hero-content">
+
+<div class="hero-badge">
+🚚 FAZEMOS ENTREGAS
+</div>
+
+<h1>
+Drogaria e Perfumaria Estrela
+</h1>
+
+<p>
+Cuidados para sua saúde, higiene e beleza,
+com praticidade e atendimento próximo.
+</p>
+
+<div class="hero-buttons">
+
+<a
+href="#categorias"
+class="btn btn-white"
+>
+Ver produtos
+</a>
+
+<a
+href="#"
+class="btn btn-red"
+onclick="this.href=whatsappLink(
+'Olá! Quero consultar produtos e fazer um pedido.'
+)"
+>
+📲 Pedir pelo WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================
+     CATEGORIAS
+========================================= -->
+
+<section id="categorias">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Encontre o que precisa
+</h2>
+
+<p>
+Confira algumas das categorias disponíveis.
+</p>
+
+</div>
+
+
+<div class="categories">
+
+
+<div class="category">
+
+<div class="category-icon">
+💊
+</div>
+
+<h3>
+Medicamentos
+</h3>
+
+<p>
+Consulte a disponibilidade.
+</p>
+
+</div>
+
+
+<div class="category">
+
+<div class="category-icon">
+🧴
+</div>
+
+<h3>
+Higiene
+</h3>
+
+<p>
+Cuidados para o dia a dia.
+</p>
+
+</div>
+
+
+<div class="category">
+
+<div class="category-icon">
+💄
+</div>
+
+<h3>
+Perfumaria
+</h3>
+
+<p>
+Beleza e cuidados pessoais.
+</p>
+
+</div>
+
+
+<div class="category">
+
+<div class="category-icon">
+🍼
+</div>
+
+<h3>
+Cuidados
+</h3>
+
+<p>
+Produtos para toda a família.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================
+     BANNER ROTATIVO
+========================================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Conheça nossa loja
+</h2>
+
+<p>
+Confira nossos produtos e ambiente.
+</p>
+
+</div>
+
+
+<div class="slider">
+
+<div
+class="slides"
+id="slides"
+>
+
+
+<!-- VÍDEO -->
+
+<div class="slide">
+
+<video
+src="video.mp4"
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+>
+
+Seu navegador não suporta vídeos.
+
+</video>
+
+<div class="slide-caption">
+
+<h3>
+Qualidade e praticidade
+</h3>
+
+<p>
+Tudo para seus cuidados.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="slide">
+
+<img
+src="img1.png"
+alt="Produtos da Drogaria Estrela"
+>
+
+<div class="slide-caption">
+
+<h3>
+Cuidados para toda a família
+</h3>
+
+<p>
+Encontre o que você precisa.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="slide">
+
+<img
+src="img2.png"
+alt="Perfumaria Estrela"
+>
+
+<div class="slide-caption">
+
+<h3>
+Perfumaria e beleza
+</h3>
+
+<p>
+Cuide de você todos os dias.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="slide">
+
+<img
+src="img3.png"
+alt="Drogaria Estrela"
+>
+
+<div class="slide-caption">
+
+<h3>
+Atendimento próximo
+</h3>
+
+<p>
+Estamos prontos para atender.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<button
+class="slider-btn prev"
+onclick="moverSlide(-1)"
+aria-label="Imagem anterior"
+>
+‹
+</button>
+
+
+<button
+class="slider-btn next"
+onclick="moverSlide(1)"
+aria-label="Próxima imagem"
+>
+›
+</button>
+
+
+<div class="dots">
+
+<span
+class="dot active"
+onclick="irSlide(0)"
+></span>
+
+<span
+class="dot"
+onclick="irSlide(1)"
+></span>
+
+<span
+class="dot"
+onclick="irSlide(2)"
+></span>
+
+<span
+class="dot"
+onclick="irSlide(3)"
+></span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================
+     ENTREGA
+========================================= -->
+
+<section
+class="delivery"
+id="entrega"
+>
+
+<div class="container">
+
+<div class="delivery-box">
+
+<div>
+
+<h2>
+Receba seus produtos em casa 🚚
+</h2>
+
+<p>
+A Drogaria e Perfumaria Estrela também
+realiza entregas. Consulte pelo WhatsApp
+a disponibilidade para sua região.
+</p>
+
+<a
+href="#"
+class="btn btn-white"
+onclick="this.href=whatsappLink(
+'Olá! Gostaria de saber sobre a entrega da Drogaria e Perfumaria Estrela.'
+)"
+>
+Consultar entrega
+</a>
+
+</div>
+
+
+<div class="delivery-info">
+
+<div>
+🚚 <strong>Entrega:</strong>
+consulte disponibilidade
+</div>
+
+<div>
+📲 <strong>Pedidos:</strong>
+pelo WhatsApp
+</div>
+
+<div>
+📍 <strong>Local:</strong>
+Parque das Flores, São Paulo
+</div>
+
+<div>
+⚡ <strong>Atendimento:</strong>
+rápido e fácil
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================
+     SOBRE
+========================================= -->
+
+<section id="sobre">
+
+<div class="container">
+
+<div class="about">
+
+<div class="about-img">
+
+<img
+src="banner.png"
+alt="Drogaria e Perfumaria Estrela"
+>
+
+</div>
+
+
+<div>
+
+<h2>
+Sobre a Drogaria e Perfumaria Estrela
+</h2>
+
+<p>
+A Drogaria e Perfumaria Estrela oferece
+produtos para cuidados com a saúde,
+higiene, beleza e bem-estar.
+</p>
+
+<br>
+
+<p>
+Nosso objetivo é proporcionar praticidade,
+atendimento próximo e facilidade para
+nossos clientes.
+</p>
+
+<br>
+
+<p>
+Para consultar produtos ou realizar um
+pedido, entre em contato pelo WhatsApp.
+</p>
+
+<br>
+
+<a
+href="#"
+class="btn btn-red"
+onclick="this.href=whatsappLink(
+'Olá! Gostaria de conhecer os produtos da Drogaria e Perfumaria Estrela.'
+)"
+>
+Falar com a Drogaria
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================
+     FAQ
+========================================= -->
+
+<section id="faq">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Perguntas frequentes
+</h2>
+
+<p>
+Tire suas dúvidas sobre produtos,
+pedidos e entregas.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+
+<details>
+<summary>Vocês fazem entrega?</summary>
+<p>
+Sim. A Drogaria e Perfumaria Estrela
+realiza entregas. Consulte pelo WhatsApp
+a disponibilidade de entrega para o seu endereço.
+</p>
+</details>
+
+
+<details>
+<summary>Como faço um pedido?</summary>
+<p>
+É simples. Entre em contato pelo WhatsApp,
+informe os produtos que procura e nossa
+equipe irá verificar a disponibilidade.
+</p>
+</details>
+
+
+<details>
+<summary>Posso consultar se um produto está disponível?</summary>
+<p>
+Sim. Envie o nome do produto pelo WhatsApp
+e consulte nossa equipe sobre a disponibilidade.
+</p>
+</details>
+
+
+<details>
+<summary>Quais produtos encontro na Drogaria Estrela?</summary>
+<p>
+Trabalhamos com produtos de saúde,
+higiene, perfumaria, beleza e cuidados pessoais.
+Consulte nossa equipe para saber a disponibilidade
+de um produto específico.
+</p>
+</details>
+
+
+<details>
+<summary>Vocês trabalham com produtos de higiene pessoal?</summary>
+<p>
+Sim. Temos produtos voltados para higiene
+e cuidados pessoais. Entre em contato pelo
+WhatsApp para consultar as opções disponíveis.
+</p>
+</details>
+
+
+<details>
+<summary>Vocês têm produtos de perfumaria e beleza?</summary>
+<p>
+Sim. A Drogaria e Perfumaria Estrela também
+oferece produtos de perfumaria, beleza e
+cuidados pessoais.
+</p>
+</details>
+
+
+<details>
+<summary>Posso pedir informações pelo WhatsApp?</summary>
+<p>
+Sim. Você pode falar diretamente com nossa
+equipe pelo WhatsApp para consultar produtos,
+disponibilidade e informações sobre entrega.
+</p>
+</details>
+
+
+<details>
+<summary>Onde fica a Drogaria e Perfumaria Estrela?</summary>
+<p>
+Nosso endereço principal é R. Rosa Vermelha,
+119-323, Parque das Flores, São Paulo - SP,
+CEP 08391-260.
+</p>
+</details>
+
+
+<details>
+<summary>Como saber se vocês entregam no meu endereço?</summary>
+<p>
+Envie seu endereço pelo WhatsApp.
+Nossa equipe poderá verificar a disponibilidade
+de entrega para sua região.
+</p>
+</details>
+
+
+<details>
+<summary>Posso visitar a loja pessoalmente?</summary>
+<p>
+Sim. Você pode visitar nossa unidade no
+Parque das Flores, em São Paulo.
+Consulte nossa equipe pelo WhatsApp caso
+precise de informações antes de ir.
+</p>
+</details>
+
+
+<details>
+<summary>Como posso saber o preço de um produto?</summary>
+<p>
+Entre em contato pelo WhatsApp informando
+o produto que deseja consultar e nossa equipe
+poderá verificar as informações disponíveis.
+</p>
+</details>
+
+
+<details>
+<summary>Vocês atendem pelo WhatsApp?</summary>
+<p>
+Sim. O WhatsApp é uma das formas de contato
+para consultar produtos, fazer pedidos e obter
+informações sobre entregas.
+</p>
+</details>
+
+
+<details>
+<summary>Onde fica a loja?</summary>
+<p>
+R. Rosa Vermelha, 119-323,
+Parque das Flores,
+São Paulo - SP,
+08391-260.
+</p>
+</details>
+
+
+<details>
+<summary>Como posso entrar em contato?</summary>
+<p>
+Você pode utilizar qualquer um dos botões
+de WhatsApp disponíveis no site para falar
+com a Drogaria e Perfumaria Estrela.
+</p>
+</details>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================
+     LOCALIZAÇÃO
+========================================= -->
+
+<section id="localizacao">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Onde estamos
+</h2>
+
+<p>
+Confira nossos endereços e entre em contato
+para informações sobre atendimento e entrega.
+</p>
+
+</div>
+
+
+<div class="location">
+
+
+<div class="location-box">
+
+<h3>
+📍 Endereços
+</h3>
+
+
+<div class="address-card">
+
+<strong>
+📍 Parque das Flores
+</strong>
+
+<p>
+R. Rosa Vermelha, 119-323<br>
+Parque das Flores<br>
+São Paulo - SP<br>
+CEP: 08391-260
+</p>
+
+</div>
+
+
+<div class="address-card">
+
+<strong>
+📍 Jardim Rodolfo Pirani
+</strong>
+
+<p>
+R. Morro das Pedras, 145<br>
+Jardim Rodolfo Pirani<br>
+São Paulo - SP<br>
+CEP: 08310-100
+</p>
+
+</div>
+
+
+<div class="address-card">
+
+<strong>
+📍 Jardim Santo André
+</strong>
+
+<p>
+R. Miguel Ferreira de Melo<br>
+Jardim Santo André<br>
+São Paulo - SP<br>
+CEP: 08390-020
+</p>
+
+</div>
+
+
+<div class="location-delivery">
+
+<h3>
+🚚 Entrega
+</h3>
+
+<p>
+Fazemos entregas. Consulte a disponibilidade
+pelo WhatsApp.
+</p>
+
+</div>
+
+<br>
+
+
+<a
+href="#"
+class="btn btn-red"
+onclick="this.href=whatsappLink(
+'Olá! Gostaria de informações sobre a Drogaria e Perfumaria Estrela.'
+)"
+>
+Entrar em contato
+</a>
+
+
+</div>
+
+
+<iframe
+class="map"
+src="https://www.google.com/maps?q=R.%20Rosa%20Vermelha%20119-323%20Parque%20das%20Flores%20São%20Paulo%20SP%2008391-260&output=embed"
+loading="lazy"
+title="Mapa da Drogaria e Perfumaria Estrela"
+>
+</iframe>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================
+     CTA FINAL
+========================================= -->
+
+<section class="final-cta">
+
+<div class="container">
+
+<h2>
+Precisa de algum produto?
+</h2>
+
+<p>
+Fale conosco pelo WhatsApp e consulte
+a disponibilidade.
+</p>
+
+<br>
+
+<a
+href="#"
+class="btn btn-red"
+onclick="this.href=whatsappLink(
+'Olá! Gostaria de consultar um produto.'
+)"
+>
+📲 Consultar no WhatsApp
+</a>
+
+<br><br>
+
+<a
+href="https://www.instagram.com/drogariaestrelaoficial/"
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-blue"
+>
+📷 Instagram
+</a>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>
+Drogaria e Perfumaria Estrela
+</h3>
+
+<p>
+Produtos para saúde, higiene,
+beleza e cuidados pessoais.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Atendimento
+</h3>
+
+<p>
+📍 R. Rosa Vermelha, 119-323<br>
+Parque das Flores<br>
+São Paulo - SP<br>
+08391-260
+</p>
+
+<p class="cnpj">
+CNPJ: 24.503.784/0001-39
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Navegação
+</h3>
+
+<div class="footer-links">
+
+<a href="#inicio">
+Início
+</a>
+
+<a href="#categorias">
+Produtos
+</a>
+
+<a href="#entrega">
+Entrega
+</a>
+
+<a href="#sobre">
+Sobre
+</a>
+
+<a href="#faq">
+Dúvidas
+</a>
+
+<a href="#localizacao">
+Localização
+</a>
+
+<a href="sobre.html">
+Sobre a Drogaria
+</a>
+
+<a href="politica-privacidade.html">
+Política de Privacidade
+</a>
+
+<a href="termos-de-uso.html">
+Termos de Uso
+</a>
+
+<a
+href="https://www.instagram.com/drogariaestrelaoficial/"
+target="_blank"
+rel="noopener noreferrer"
+class="instagram-link"
+>
+📷 Instagram
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 Drogaria e Perfumaria Estrela.
+Todos os direitos reservados.
+
+</div>
+
+</footer>
+
+
+<!-- =========================================
+     WHATSAPP FLUTUANTE
+========================================= -->
+
+<a
+href="#"
+class="whatsapp-float"
+aria-label="Falar pelo WhatsApp"
+onclick="this.href=whatsappLink(
+'Olá! Gostaria de fazer um pedido na Drogaria e Perfumaria Estrela.'
+)"
+>
+
+<svg
+viewBox="0 0 24 24"
+xmlns="http://www.w3.org/2000/svg"
+aria-hidden="true"
+>
+
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.848 1.213 3.047.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982 1-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.887 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.89c0 2.096.547 4.142 1.588 5.946L.057 24l6.304-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.89a11.821 11.821 0 00-3.478-8.416"/>
+
+</svg>
+
+</a>
+
+
+<!-- =========================================
+     JAVASCRIPT DO SLIDER
+========================================= -->
+
+<script>
+
+let slideAtual = 0;
+
+const slides =
+document.getElementById("slides");
+
+const dots =
+document.querySelectorAll(".dot");
+
+
+function mostrarSlide(numero){
+
+    if(numero >= 4){
+        slideAtual = 0;
+    }
+
+    if(numero < 0){
+        slideAtual = 3;
+    }
+
+    slides.style.transform =
+        "translateX(-" +
+        (slideAtual * 100) +
+        "%)";
+
+    dots.forEach(
+        (dot,index)=>{
+
+            dot.classList.toggle(
+                "active",
+                index === slideAtual
+            );
+
+        }
+    );
+
+}
+
+
+function moverSlide(direcao){
+
+    slideAtual += direcao;
+
+    mostrarSlide(slideAtual);
+
+}
+
+
+function irSlide(numero){
+
+    slideAtual = numero;
+
+    mostrarSlide(slideAtual);
+
+}
+
+
+setInterval(()=>{
+
+    slideAtual++;
+
+    if(slideAtual > 3){
+        slideAtual = 0;
+    }
+
+    mostrarSlide(slideAtual);
+
+},5000);
+
+</script>
+
+
+</body>
+
+</html>
